@@ -25,7 +25,7 @@ import {
   DeliverySection,
 } from "./styles";
 import logo from "../../assets/images/logo.svg";
-import loupe from "../../assets/images/loupe.svg";
+import loupe from "../../assets/images/search-icon.svg";
 import phoneImg from "../../assets/images/phone.svg";
 import chairImg from "../../assets/images/chair-icon.svg";
 import userImg from "../../assets/images/profile-icon.svg";
