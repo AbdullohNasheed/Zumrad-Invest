@@ -26,8 +26,8 @@ export const HeaderMenu = styled.ul`
 `;
 
 export const HeaderElement = styled.a`
-  width: 110px;
-  height: 25px;
+  width: 210px;
+  height: 35px;
 `;
 
 export const HeaderElementImg = styled.img`
@@ -77,7 +77,7 @@ export const MenuSearch = styled.input`
 `;
 
 export const EmptyComp = styled.div`
-  width: 250px;
+  width: 140px;
   height: 100%;
 `;
 
@@ -95,29 +95,29 @@ export const PhoneImg = styled.img`
 `;
 
 export const WishList = styled.a`
-  width: 17px;
-  height: 17px;
+  width: 20px;
+  height: 20px;
   display: flex;
   margin-left: 40px;
   align-items: center;
 `;
 
 export const WishListImg = styled.img`
-  width: 17px;
-  height: 17px;
+  width: 20px;
+  height: 20px;
 `;
 
 export const UserComp = styled.a`
-  width: 17px;
-  height: 17px;
+  width: 20px;
+  height: 20px;
   display: flex;
   margin-left: 40px;
   align-items: center;
 `;
 
 export const UserImg = styled.img`
-  width: 17px;
-  height: 17px;
+  width: 20px;
+  height: 20px;
 `;
 
 export const InnerMenu = styled.div`
@@ -209,22 +209,67 @@ export const BuyButton = styled.button`
   margin-right: 50px;
   color: #fff;
   cursor: pointer;
-  transition: 0.3s;
+  transition: 0.2s;
   background-color: #245462;
   &:hover {
-    transition: 0.3s;
-    background-color: sienna;
+    width: 130px;
+    transition: 0.2s;
   }
 `;
 
-export const LikedItem = styled.div ` 
+export const LikedItem = styled.div`
   width: 200px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-`
+`;
 
-export const LikeImg = styled.img ` 
+export const LikeImg = styled.img`
   width: 25px;
   height: 25px;
-`
+`;
+
+export const NumComp = styled.div`
+  width: 360px;
+  height: 70px;
+  display: flex;
+  margin-top: 30px;
+  /* margin-left: 2px; */
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 14px;
+`;
+
+export const ItemNumber = styled.div`
+  display: flex;
+  flex-direction: column;
+  margin-left: 2px;
+`;
+
+export const ItemNum = styled.input`
+  width: 50px;
+  height: 50px;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #000;
+  font-size: 24px;
+`;
+
+export const ItemSize = styled.div`
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+`;
+
+export const Size = styled.h4`
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 2px;
+  border-bottom: 1px solid #000;
+`;
+export const ItemCharacteristic = styled.div`
+  width: 95%;
+  height: 50vh;
+`;

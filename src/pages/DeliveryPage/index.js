@@ -33,8 +33,14 @@ import {
   BuyButton,
   LikedItem,
   LikeImg,
+  NumComp,
+  ItemNum,
+  ItemNumber,
+  ItemSize,
+  Size,
+  ItemCharacteristic,
 } from "./styles";
-import logo from "../../assets/images/logo.svg";
+import logo from "../../assets/images/logo.png";
 import loupe from "../../assets/images/search-icon.svg";
 import phoneImg from "../../assets/images/phone.svg";
 import chairImg from "../../assets/images/chair-icon.svg";
@@ -42,8 +48,7 @@ import userImg from "../../assets/images/profile-icon.svg";
 import wishImg from "../../assets/images/wishlist-icon-default.svg";
 import wishRedImg from "../../assets/images/wishlist-icon-red.svg";
 import officeImg from "../../assets/images/office-icon.svg";
-import SelectedtImage from "../../assets/images/IMG_4829.JPG";
-import { BlockPicker } from "react-color";
+import SelectedtImage from "../../assets/images/IMG_4867.JPG";
 
 export default function DeliveryPage() {
   const [isLiked, setisLiked] = useState(false);
@@ -72,7 +77,8 @@ export default function DeliveryPage() {
           </SearchComp>
           <EmptyComp />
           <CallComp>
-            <PhoneImg src={phoneImg} />8 (964) 89 99 119
+            <PhoneImg src={phoneImg} />
+            (9*) 123 45 67
           </CallComp>
           <WishList href="#">
             <WishListImg src={wishImg} />
@@ -98,10 +104,10 @@ export default function DeliveryPage() {
             <ImgSrc src={SelectedtImage} />
           </ItemImg>
           <ItemDoc>
-            <ItemName>201-H</ItemName>
+            <ItemName> Модель: 201-H</ItemName>
             <ItemPrice>
               <Price>4 690₽</Price>
-              <BuyButton >Купить</BuyButton>
+              <BuyButton>Купить</BuyButton>
               <LikedItem>
                 {isLiked ? (
                   <LikeImg
@@ -114,8 +120,18 @@ export default function DeliveryPage() {
                 Добавить в желаемое
               </LikedItem>
             </ItemPrice>
+            <NumComp>
+              <ItemNumber>
+                Количество
+                <ItemNum type="number" placeholder="1" min="1" max="10" />
+              </ItemNumber>
+              <ItemSize>
+                Размер (Д × Ш × В) <Size>218 СМ × 95 СМ × 90 СМ</Size>
+              </ItemSize>
+            </NumComp>
           </ItemDoc>
         </SelectedItem>
+        <ItemCharacteristic></ItemCharacteristic>
       </DeliverySection>
     </DeliveryCont>
   );
