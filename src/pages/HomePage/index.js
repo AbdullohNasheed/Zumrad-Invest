@@ -54,7 +54,6 @@ import {
   LogoImg,
   BackgrundImg,
   CloseButton,
-  customStyles,
   ModalInput,
   // customStyles,
 } from "./styled";
@@ -63,7 +62,6 @@ import WishIcon from "../../assets/images/wishlist-icon-default.svg";
 import ProfileIcon from "../../assets/images/profile-icon.svg";
 import Lupaicon from "../../assets/images/search-icon.svg";
 import Ofices from "../../assets/images/office-icon.svg";
-// import Backgrund from "../../assets/images/reklam-img.svg";
 import foto_1 from "../../assets/images/IMG_4832.JPG";
 import foto_2 from "../../assets/images/IMG_4842.JPG";
 import foto_3 from "../../assets/images/IMG_4843.JPG";
@@ -117,7 +115,7 @@ function HomePage() {
     <>
       <Header>
         <HeaderInner>
-          <LogoImg src={MeblLogo} />
+          <LogoImg src={ MeblLogo} />
           <InputCont>
             <InputLupa href="#">
               <Lupa src={Lupaicon} />
@@ -141,7 +139,7 @@ function HomePage() {
               <ModalInput type="password" placeholder="Password" />
 
               <CloseButton onClick={() => setIsOpen(false)}>
-                Close modal
+                Close moda
               </CloseButton>
             </Modal>
           </ProfileLink>
