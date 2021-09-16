@@ -39,6 +39,7 @@ import {
   ItemSize,
   Size,
   ItemCharacteristic,
+  CharComp,
 } from "./styles";
 import logo from "../../assets/images/logo.png";
 import loupe from "../../assets/images/search-icon.svg";
@@ -131,7 +132,12 @@ export default function DeliveryPage() {
             </NumComp>
           </ItemDoc>
         </SelectedItem>
-        <ItemCharacteristic></ItemCharacteristic>
+        <ItemCharacteristic>
+          <CharComp>
+            Характеристики
+            
+            </CharComp>
+        </ItemCharacteristic>
       </DeliverySection>
     </DeliveryCont>
   );

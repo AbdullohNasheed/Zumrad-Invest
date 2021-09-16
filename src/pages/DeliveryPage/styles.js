@@ -22,7 +22,7 @@ export const HeaderMenu = styled.ul`
   display: flex;
   list-style: none;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
 `;
 
 export const HeaderElement = styled.a`
@@ -132,7 +132,8 @@ export const InnerItems = styled.li`
   height: 40px;
   display: flex;
   list-style: none;
-  margin-right: 90px;
+  margin-left: 50px;
+  /* margin-right: 90px; */
   align-items: center;
   border-top: 1px solid #000;
   justify-content: space-between;
@@ -272,4 +273,21 @@ export const Size = styled.h4`
 export const ItemCharacteristic = styled.div`
   width: 95%;
   height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  
 `;
+
+export const CharComp = styled.h4`
+  font-size: 20px;
+  font-weight: 500;
+  margin-left: 50px;
+  color: #414141;
+  /* border-bottom: 1px solid #245462; */
+`;
+
+export const EmtyBorder = styled.span ` 
+  width: 100px;
+
+`

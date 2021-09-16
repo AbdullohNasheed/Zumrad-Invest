@@ -1,16 +1,23 @@
 import React from "react";
-import { BrowserRouter, Switch, Route } from "react-router-dom";
+import { BrowserRouter, Switch, Route, Redirect } from "react-router-dom";
 import ChoosePage from "../pages/ChoosePage/ChoosePage";
 import DeliveryPage from "../pages/DeliveryPage";
-import HomePage from '../pages/HomePage/index'
+import HomePage from "../pages/HomePage/index";
+// import LoginPage from "../pages/LoginPage";
+// import Register from "../pages/RegisterPage";
 export default function Routes() {
   return (
     <BrowserRouter>
-        <Switch>
-            <Route path="/homepage" component={HomePage}/>
-            <Route path="/choosepage" component={ChoosePage}/>
-            <Route path="/delivery" component={DeliveryPage}/>
-        </Switch>
-  </BrowserRouter>
+      <Switch>
+        <Route exact path="/">
+          <Redirect to="/homepage" />
+        </Route>
+        <Route path="/homepage" component={HomePage} />
+        <Route path="/choosepage" component={ChoosePage} />
+        <Route path="/delivery" component={DeliveryPage} />
+        {/* <Route path="/login" component={LoginPage} /> */}
+        {/* <Route path="/registration" component={Register} /> */}
+      </Switch>
+    </BrowserRouter>
   );
 }
