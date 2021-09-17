@@ -15,10 +15,6 @@ export const HeaderInner = styled.div`
   align-items: center;
   justify-content: space-between;
 `;
-export const LogoImg = styled.img`
-  width: 10%;
-  height: 50%;
-`;
 export const InputCont = styled.div`
   width: 75%;
   height: 50%;
@@ -34,6 +30,10 @@ export const ProfileStyledIcon = styled.img`
   width: 12.87px;
   height: 18px;
 `;
+export const  Logotip = styled.img`
+ width: 15%;
+ height: 80%;
+`
 export const WishLink = styled.a`
   width: 19.83px;
   height: 18px;
@@ -52,10 +52,12 @@ export const ModalInput = styled.input `
 
 
 export const CloseButton = styled.button `
-  width: 150px;
-  height: 30px;
-  background-color: #000;
-  color: #fff;
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  background-color: #fff;
+  color: black;
+  font-size: 12px;
 `
 
 export const InputLupa = styled.a`
@@ -85,7 +87,9 @@ export const Header_one = styled.div`
 export const Header_two = styled.div`
   width: 80%;
   height: 80%;
-  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  -webkit-box-shadow: 0px 0px 12px -3px rgba(34, 60, 80, 0.2);
+-moz-box-shadow: 0px 0px 12px -3px rgba(34, 60, 80, 0.2);
+box-shadow: 0px 0px 12px -3px rgba(34, 60, 80, 0.2);
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -121,21 +125,35 @@ export const AdvertisingImg = styled.div`
   width: 80%;
   height: 100%;
   display: flex;
+  align-items: flex-end; 
 `;
 export const BackgrundImg = styled.div`
   width: 100%;
-  height: 100%;
+  height: 95%;
   background-image: url(${img});
   background-position: center;
   background-repeat: no-repeat;
   background-size: 120%;
+  -webkit-box-shadow: 0px 0px 46px -12px rgba(34, 60, 80, 0.2);
+-moz-box-shadow: 0px 0px 46px -12px rgba(34, 60, 80, 0.2);
+box-shadow: 0px 0px 46px -12px rgba(34, 60, 80, 0.2);
 `;
+
+export const XitPradaja = styled.div`
+ width: 19%;
+ height: 6vh;
+ display: flex;
+ align-items: flex-end;
+ justify-content: flex-end;
+ font-size: 16px;
+ font-weight: 550;
+`
 
 //Advertising.......
 
 export const Section = styled.section`
   width: 100%;
-  height: 183.5vh;
+  height: 191.5vh;
   display: flex;
   justify-content: center;
 `;
@@ -148,7 +166,7 @@ export const Section_inner = styled.div`
 
 export const Div = styled.div`
   width: 100%;
-  height: 45vh;
+  height: 47vh;
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
@@ -157,8 +175,9 @@ export const Div_one = styled.div`
   width: 23.5%;
   height: 93%;
   display: flex;
-  box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px,
-    rgba(17, 17, 26, 0.1) 0px 0px 8px;
+  -webkit-box-shadow: 0px 0px 12px -3px rgba(34, 60, 80, 0.2);
+-moz-box-shadow: 0px 0px 12px -3px rgba(34, 60, 80, 0.2);
+box-shadow: 0px 0px 12px -3px rgba(34, 60, 80, 0.2);
   flex-direction: column;
 `;
 export const Like = styled.a`
@@ -215,8 +234,9 @@ export const Footer = styled.footer`
   height: 30vh;
   display: flex;
   justify-content: center;
-  box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em,
-    rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+  -webkit-box-shadow: 0px 0px 12px -3px rgba(34, 60, 80, 0.2);
+-moz-box-shadow: 0px 0px 12px -3px rgba(34, 60, 80, 0.2);
+box-shadow: 0px 0px 12px -3px rgba(34, 60, 80, 0.2);
 `;
 export const Footer_Inner = styled.div`
   width: 80%;

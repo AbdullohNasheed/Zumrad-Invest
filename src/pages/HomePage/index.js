@@ -51,13 +51,14 @@ import {
   ProfileStyledIcon,
   InputCont,
   HeaderInner,
-  LogoImg,
+  Logotip,
   BackgrundImg,
   CloseButton,
   ModalInput,
+  XitPradaja,
   // customStyles,
 } from "./styled";
-import MeblLogo from "../../assets/images/logo.svg";
+import MeblLogo from "../../assets/images/Screenshot_1.png";
 import WishIcon from "../../assets/images/wishlist-icon-default.svg";
 import ProfileIcon from "../../assets/images/profile-icon.svg";
 import Lupaicon from "../../assets/images/search-icon.svg";
@@ -115,7 +116,7 @@ function HomePage() {
     <>
       <Header>
         <HeaderInner>
-          <LogoImg src={ MeblLogo} />
+          <Logotip src={MeblLogo}/>
           <InputCont>
             <InputLupa href="#">
               <Lupa src={Lupaicon} />
@@ -139,7 +140,7 @@ function HomePage() {
               <ModalInput type="password" placeholder="Password" />
 
               <CloseButton onClick={() => setIsOpen(false)}>
-                Close moda
+                Выход
               </CloseButton>
             </Modal>
           </ProfileLink>
@@ -159,9 +160,12 @@ function HomePage() {
       </Header_one>
       <Advertising>
         <AdvertisingImg>
-          <BackgrundImg>hello</BackgrundImg>
+          <BackgrundImg></BackgrundImg>
         </AdvertisingImg>
       </Advertising>
+      <XitPradaja>
+      Хиты продаж
+      </XitPradaja>
       <Section>
         <Section_inner>
           <Div>
