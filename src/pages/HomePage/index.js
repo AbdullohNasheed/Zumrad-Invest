@@ -56,7 +56,16 @@ import {
   CloseButton,
   ModalInput,
   XitPradaja,
-  // customStyles,
+  Email,
+  Modal_one,
+  CloseInput,
+  ModalButto,
+  ModalButton_one,
+  AdvertisingInner,
+  Loft,
+  LoftButton,
+  LoftText,
+
 } from "./styled";
 import MeblLogo from "../../assets/images/Screenshot_1.png";
 import WishIcon from "../../assets/images/wishlist-icon-default.svg";
@@ -88,25 +97,20 @@ function HomePage() {
   const customStyles = {
     overlay: {
       background: "#000",
-      opacity: ".8",
+      opacity: "0.8",
     },
     content: {
+      top: '50%',
+      left: '50%',
+      right: 'auto',
+      bottom: 'auto',
+      marginRight: '-50%',
+      transform: 'translate(-50%, -50%)',
       display: "flex",
-      flexDirection: "column",
-      alignItems: "center",
-      justifyContent: "center",
-      width: "400px",
-      height: "300px",
-      top: "50%",
-      left: "50%",
-      right: "auto",
-      bottom: "auto",
-      marginRight: "-50%",
-      transform: "translate(-50%, -50%)",
-      background: "#AFE19F",
+      width: "30%",
+      height: "70%",
+      background:"#000",
       border: "none",
-      borderRadius: "10px",
-      color: "#fff",
     },
   };
 
@@ -136,12 +140,26 @@ function HomePage() {
               style={customStyles}
               onRequestClose={() => setIsOpen(false)}
             >
-              <ModalInput type="text" placeholder="Email" />
-              <ModalInput type="password" placeholder="Password" />
-
-              <CloseButton onClick={() => setIsOpen(false)}>
-                Выход
-              </CloseButton>
+             <CloseButton>
+              <CloseInput>
+              <Modal_one>
+              <ModalInput type="text"required="required"/>
+              <Email>Email</Email>
+              </Modal_one>
+              <Modal_one>
+              <ModalInput type="password" required="required"/>
+              <Email>Password</Email>
+              </Modal_one>
+              <Modal_one>
+              <ModalButto>
+                 Login
+              </ModalButto>
+              <ModalButton_one onClick={() => setIsOpen(false)}>
+                 Exit
+              </ModalButton_one>
+              </Modal_one>
+              </CloseInput>
+             </CloseButton>
             </Modal>
           </ProfileLink>
         </HeaderInner>
@@ -160,7 +178,13 @@ function HomePage() {
       </Header_one>
       <Advertising>
         <AdvertisingImg>
-          <BackgrundImg></BackgrundImg>
+          <BackgrundImg>
+            <AdvertisingInner>
+                <Loft>loft <br/>мебель</Loft>
+                <LoftText>Современная и удобная мебель в Анапе</LoftText>
+                <LoftButton>СМОТРЕТЬ КАТАЛОГ</LoftButton>
+            </AdvertisingInner>
+          </BackgrundImg>
         </AdvertisingImg>
       </Advertising>
       <XitPradaja>

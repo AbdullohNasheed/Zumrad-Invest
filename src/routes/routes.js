@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter, Switch, Route, Redirect } from "react-router-dom";
 import ChoosePage from "../pages/ChoosePage/ChoosePage";
-import Dashboard from "../pages/dashboard";
+import Dashboard from "../pages/Dashboard";
 import DeliveryPage from "../pages/DeliveryPage";
 import HomePage from "../pages/HomePage/index";
 // import LoginPage from "../pages/LoginPage";
@@ -16,6 +16,7 @@ export default function Routes() {
         <Route path="/homepage" component={HomePage} />
         <Route path="/choosepage" component={ChoosePage} />
         <Route path="/delivery" component={DeliveryPage} />
+        
         <Route path="/dashboard" component={Dashboard} />
         {/* <Route path="/login" component={LoginPage} /> */}
         {/* <Route path="/registration" component={Register} /> */}
