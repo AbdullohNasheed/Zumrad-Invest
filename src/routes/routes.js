@@ -4,6 +4,7 @@ import ChoosePage from "../pages/ChoosePage/ChoosePage";
 import Dashboard from "../pages/Dashboard";
 import DeliveryPage from "../pages/DeliveryPage";
 import HomePage from "../pages/HomePage/index";
+import OrderPage from "../pages/Order";
 // import LoginPage from "../pages/LoginPage";
 // import Register from "../pages/RegisterPage";
 export default function Routes() {
@@ -16,7 +17,7 @@ export default function Routes() {
         <Route path="/homepage" component={HomePage} />
         <Route path="/choosepage" component={ChoosePage} />
         <Route path="/delivery" component={DeliveryPage} />
-        
+        <Route path="/orderpage" component={OrderPage} />
         <Route path="/dashboard" component={Dashboard} />
         {/* <Route path="/login" component={LoginPage} /> */}
         {/* <Route path="/registration" component={Register} /> */}

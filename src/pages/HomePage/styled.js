@@ -14,6 +14,10 @@ export const HeaderInner = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
+  & i {
+   font-size: 19.83px; 
+   color: #6c6c6c;
+ }
 `;
 export const InputCont = styled.div`
   width: 75%;

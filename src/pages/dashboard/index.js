@@ -1,5 +1,5 @@
 /* eslint-disable no-unused-vars */
-import React, { useState,} from 'react'
+import React, { useState, } from 'react'
 import { BrowserRouter as Router, Link, Route, Switch, useRouteMatch } from 'react-router-dom';
 import AdminImage from '../../assets/images/photo_2021-08-04_10-05-31.jpg'
 
@@ -25,7 +25,7 @@ import {
     Div,
     DivAdmin,
     ImageInner,
-} from"./style"
+} from "./style"
 
 import 'boxicons';
 
@@ -34,11 +34,12 @@ import OrderPage from './Pages/Order';
 import ProductsPage from './Pages/Products';
 import UserPage from './Pages/User';
 import MessagePage from './Pages/Messages';
-import BannerPage from'./Pages/Banner'
+import BannerPage from './Pages/Banner'
+import AddNewPage from './Pages/Products/modules/Add-new';
 
 
 function Dashboard() {
-    let { path,} = useRouteMatch()
+    let { path, } = useRouteMatch()
 
     const [isShow, setIsShow] = useState(true);
 
@@ -117,16 +118,16 @@ function Dashboard() {
                 <Admin>
                     {isShow ? (
                         <DivAdmin>
-                          <ImageInner>  
-                            <Image src={AdminImage}/>
-                          </ImageInner>
+                            <ImageInner>
+                                <Image src={AdminImage} />
+                            </ImageInner>
                             <Name>
-                            Ibrohim
-                            <Job>Admin</Job>
+                                Ibrohim
+                                <Job>Admin</Job>
                             </Name>
                         </DivAdmin>
                     ) : null}
-                <Div> <i class='bx bx-log-out'></i></Div>
+                    <Div> <i class='bx bx-log-out'></i></Div>
                 </Admin>
             </SidebarCont>
             <MainCont>
@@ -145,14 +146,20 @@ function Dashboard() {
                         component={OrderPage}
                     />
                     <Route
+                        exact
                         path={`${path}/products`}
                         component={ProductsPage}
                     />
-                     <Route
+                    <Route
+                        exact
+                        path={`${path}/products/add-new`}
+                        component={AddNewPage}
+                    />
+                    <Route
                         path={`${path}/messages`}
                         component={MessagePage}
                     />
-                     <Route
+                    <Route
                         path={`${path}/banner`}
                         component={BannerPage}
                     />

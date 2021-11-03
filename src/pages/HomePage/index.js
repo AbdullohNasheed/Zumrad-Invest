@@ -92,6 +92,7 @@ import Phone from "../../assets/images/phone.svg";
 import Instagram from "../../assets/images/insta-icon.svg";
 import mail from "../../assets/images/mail-icon.svg";
 import Modal from "react-modal";
+import { Link } from "react-router-dom";
 
 function HomePage() {
   const customStyles = {
@@ -130,6 +131,7 @@ function HomePage() {
           <WishLink href="#">
             <WishStyledIcon src={WishIcon} />
           </WishLink>
+          <Link to="/orderpage"> <i class='bx bx-cart-alt'></i> </Link>
           <ProfileLink href="#">
             <ProfileStyledIcon
               src={ProfileIcon}

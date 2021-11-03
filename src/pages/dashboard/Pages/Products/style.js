@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 const white = '#fff'
 const black = '#11101d'
-const dark  = '#1d1b31'
+const dark = '#1d1b31'
 const darkgrey = '#2c2a3e'
 const rose = '#FCC4C9'
 const blue = '#2c3d63'
@@ -30,6 +30,25 @@ export const All = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
+`
+export const TableAdd = styled.div`
+    display: flex;
+    width: 85%;
+    justify-content: flex-end;
+    margin-top: 20px;
+`
+export const Text = styled.div`
+   width: 120px;
+   height: 35px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   border-radius: 6px;
+   color: ${white};
+   font-size: 14px; 
+   -webkit-box-shadow: 8px 0px 13px 7px rgba(1, 8, 14, 0.2);
+    -moz-box-shadow: 8px 0px 13px 7px rgba(1, 8, 14, 0.2);
+    box-shadow: 8px 0px 13px 7px rgba(1, 8, 14, 0.2);
 `
 export const ProductsInner = styled.div`
     display: flex;
